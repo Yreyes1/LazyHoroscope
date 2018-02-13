@@ -10,7 +10,7 @@ int main()
 
   std::string FirstName;
   std::string LastName;
-  
+  int Lucky;
   //get user input
 
   cout<< "What is your first name? \n";
@@ -21,8 +21,12 @@ int main()
 
   std::string word1 = FirstName;
   std::string word2 = LastName; 
-  cout<< "Welcome, " <<word1[0]<< "." <<word2[0]<< ". , here is your fortune... \n";
+  cout<< "Welcome, " <<word1[0]<< "." <<word2[0]<< "., here is your fortune, ";
+
   //tell fortune,
+  Lucky = FirstName.length();
+  //  cout<< "The variable has " <<FirstName.length() << " letters \n";
+  cout<< "your lucky number is " << Lucky << ".\n";
 
   return 0;
 }
