@@ -19,7 +19,10 @@ int main()
   cout<< "What is your last name? \n";
   cin>> LastName; 
 
-  //tell fortune
+  std::string word1 = FirstName;
+  std::string word2 = LastName; 
+  cout<< "Welcome, " <<word1[0]<< "." <<word2[0]<< ". , here is your fortune... \n";
+  //tell fortune,
 
   return 0;
 }
